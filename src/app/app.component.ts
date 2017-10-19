@@ -26,7 +26,7 @@ export class AppComponent {
     { name: '3', operator: false },
     { name: '+', operator: true },
     { name: '0', operator: false },
-    { name: '.', operator: true },
+    { name: '.', operator: false },
     { name: '<', operator: true },
     { name: '=', operator: true },
   ];

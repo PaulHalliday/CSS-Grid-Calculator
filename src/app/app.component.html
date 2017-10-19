@@ -1,12 +1,9 @@
-<div class="wrapper">
-
-  <div class="head">
-    1+1
-  </div>
-  <div class="result">
-    2
-  </div>
-  <div [ngClass]="{'operator': c.operator, 'number': !c.operator}" *ngFor="let c of calc">
-    {{c.name}}
+<div class="calculator">
+  <div class="grid-wrapper">
+    <div class="head">1+2+3</div>
+    <div class="result">6</div>
+    <div [ngClass]="{'operator': c.operator, 'number': !c.operator}" *ngFor="let c of calc">
+      {{c.name}}
+    </div>
   </div>
 </div>

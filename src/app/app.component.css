@@ -1,38 +1,40 @@
-.wrapper {
+.calculator {
+  max-width: 200px;
+  margin: auto;
+}
+
+.grid-wrapper {
   display: grid;
   background-color: #2c3e50;
-  grid-template-areas: 'head head head head' 'result result result result'
-    'operator operator operator operator' 'operator operator operator operator'
-    'operator operator operator operator' 'operator operator operator operator';
-  grid-gap: 10px;
+  grid-template-areas: 'head head head head' 'result result result result';
   padding: 10px;
-  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.267);
+  grid-gap: 5px;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.356);
 }
 
 .head {
   grid-area: head;
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.856);
   text-align: right;
-  padding: 3px;
+  padding: 5px;
   background-color: #272727;
 }
 
 .result {
   grid-area: result;
-  color: #162029;
   text-align: right;
-  font-size: 250%;
-  padding: 10px;
   background-color: #d7dadb;
+  padding: 10px;
+  color: #152029;
+  font-size: 250%;
 }
 
 .number {
-  background-color: #6dbcdb;
   text-align: center;
+  background-color: #6dbcdb;
 }
 
 .operator {
-  background-color: #fc4349;
-  color: white;
   text-align: center;
+  background-color: #fc4349;
 }
